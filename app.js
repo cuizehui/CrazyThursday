@@ -17,3 +17,24 @@ App({
     userInfo: null
   }
 })
+App({
+  // 小程序启动时的生命周期函数
+  onLaunch: function() {
+    console.log('小程序启动');
+  },
+
+  // 小程序显示时的生命周期函数
+  onShow: function() {
+    console.log('小程序显示');
+  },
+
+  // 小程序隐藏时的生命周期函数
+  onHide: function() {
+    console.log('小程序隐藏');
+  },
+
+  // 全局数据，供全局访问
+  globalData: {
+    userInfo: null
+  }
+});
