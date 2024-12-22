@@ -1,4 +1,5 @@
 {
+  "appid": "wxdad1a36d46032c08",
   "pages": [
     "pages/index/index",
     "pages/logs/logs"
