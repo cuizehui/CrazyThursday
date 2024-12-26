@@ -29,3 +29,26 @@ button {
   font-size: 18px;
   color: #333;
 }
+
+.button-container {
+  display: flex;
+  /* 使用flexbox布局 */
+  justify-content: space-between;
+  /* 在容器中均匀分布按钮 */
+  gap: 10px;
+  /* 按钮之间的间距 */
+}
+
+button {
+  flex: 1;
+  height: 60rpx;
+  background-color: transparent; /* 设置背景颜色为透明 */
+  color: #94b1cf; /* 设置文本颜色，以便在透明背景上可见 */
+  font-size: 16px;
+  border-radius: 5rpx;
+  border: 2px solid #93b9e0; /* 设置边框颜色和宽度 */
+  cursor: pointer;
+  padding: 10px;
+  text-align: center; /* 确保文本在按钮内水平居中 */
+  align-items: center; 
+}

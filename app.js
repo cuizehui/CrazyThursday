@@ -21,8 +21,15 @@ App({
   // 小程序启动时的生命周期函数
   onLaunch: function() {
     console.log('小程序启动');
+    wx.showShareMenu({
+      withShareTicket: true,
+      menus: ['shareAppMessage', 'shareTimeline']
+    });
   },
+  onLoad: function(){
+    console.log('小程序加载');
 
+  },
   // 小程序显示时的生命周期函数
   onShow: function() {
     console.log('小程序显示');

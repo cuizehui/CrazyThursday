@@ -1,15 +1,16 @@
 <!--index.wxml-->
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container">
-  <!-- 复制按钮 -->
-  <button bindtap="copyText">复制文本</button>
-
-  <!-- 刷新按钮 -->
-  <button bindtap="reloadText">刷新文本</button>
-
-  <!-- 显示随机文本 -->
-  <view class="text-container">
-    <text class="text-content">{{displayText}}</text>
+    <view class="text-container">
+      <text class="text-content">最新文案每周三更新</text>
+    </view>
+    <!-- 显示随机文本 -->
+    <view class="text-container">
+      <text class="text-content">{{displayText}}</text>
+    </view>
+    <div class="button-container">
+      <button bindtap="copyText">复制拿去V50</button>
+      <button bindtap="reloadText">烂梗换一个</button>
+    </div>
   </view>
-</view>
 </scroll-view>
