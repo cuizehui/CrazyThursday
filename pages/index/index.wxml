@@ -1,16 +1,19 @@
 <!--index.wxml-->
+<body>
+ 
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container">
-    <view class="text-container">
+    <!-- <view class="text-container">
       <text class="text-content">最新文案每周三更新</text>
-    </view>
+    </view> -->
     <!-- 显示随机文本 -->
-    <view class="text-container">
+    <view class="card">
       <text class="text-content">{{displayText}}</text>
     </view>
     <div class="button-container">
-      <button bindtap="copyText">复制拿去V50</button>
-      <button bindtap="reloadText">烂梗换一个</button>
+      <button class="btn btn-refresh" bindtap="reloadText">烂梗换一个</button>
+      <button class="btn btn-copy" bindtap="copyText">偷走</button>
     </div>
   </view>
 </scroll-view>
+</body>

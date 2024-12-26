@@ -5,15 +5,14 @@
   text-align: center;
 }
 
-/* 按钮样式 */
-button {
-  width: 250rpx;
-  height: 60rpx;
-  margin: 10rpx;
-  background-color: #007aff;
-  color: white;
-  font-size: 16px;
-  border-radius: 5rpx;
+body {
+  background-color: #f7f3e9;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex-direction;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 /* 文本区域样式 */
@@ -24,6 +23,16 @@ button {
   border-radius: 10rpx;
   background-color: #f9f9f9;
 }
+
+.card {
+  background-color: 	#FFA500;  /* 黄色卡片 */
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 
 .text-content {
   font-size: 18px;
@@ -37,18 +46,30 @@ button {
   /* 在容器中均匀分布按钮 */
   gap: 10px;
   /* 按钮之间的间距 */
+  padding-top: 20px
 }
 
-button {
-  flex: 1;
-  height: 60rpx;
-  background-color: transparent; /* 设置背景颜色为透明 */
-  color: #94b1cf; /* 设置文本颜色，以便在透明背景上可见 */
-  font-size: 16px;
+
+/* 刷新按钮样式 */
+.btn-refresh {
+  background-color: white;
+  color: black;
   border-radius: 5rpx;
-  border: 2px solid #93b9e0; /* 设置边框颜色和宽度 */
-  cursor: pointer;
-  padding: 10px;
+  margin: 10rpx;
   text-align: center; /* 确保文本在按钮内水平居中 */
-  align-items: center; 
+  font-size: 16px;
+  border-radius: 50rpx;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 复制按钮样式 */
+.btn-copy {
+  background-color: rgb(231, 49, 49);
+  color: white;
+  border-radius: 5rpx;
+  margin: 10rpx;
+  text-align: center; /* 确保文本在按钮内水平居中 */
+  font-size: 16px;
+  border-radius: 50rpx;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
