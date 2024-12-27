@@ -30,25 +30,84 @@ Page({
       `今天是2024年最后一次KFC疯狂星期四，前51个你们都没请我吃，希望你们不要留下遗憾，把握住最后一个星期四，也把握住我`,
       
       `还是分手了，谢谢大家。我们最终和平分手，其实从朋友到恋人我们发生了挺多事情，能走到一起也是很不容易。我喜欢你，很喜欢你，对啊，我总问我自己为什么还能坚持，可能没有答案，我没有备胎，
-      也不玩暧昧，我所有的脾气爱笑爱哭都给了你，我能为你做的最后一件事竟然是走出你的人生。我一点都不后悔，更谢谢你教会我成长。我也不知道这是谁写的，挺感动的我就复制下来了，看到这里说明你很在乎我，天气很冷能请我喝热咖啡吗，如果可以我想吃两杯。如果不可以，今天肯德基疯狂星期四，我想吃八个蛋挞，谢谢。`
+      也不玩暧昧，我所有的脾气爱笑爱哭都给了你，我能为你做的最后一件事竟然是走出你的人生。我一点都不后悔，更谢谢你教会我成长。我也不知道这是谁写的，挺感动的我就复制下来了，看到这里说明你很在乎我，天气很冷能请我喝热咖啡吗，如果可以我想吃两杯。如果不可以，今天肯德基疯狂星期四，我想吃八个蛋挞，谢谢。`,
+      `有没有要找工作的？我这边内推入职，朝九晚六，做五休二，全国都有分公司。前三个月试用期每个月8000块，满三个月转正月薪26000，一年后给你买车，两年后给你买房。有意者点击头像私聊，并交50块押金。
+
+      （不是想吃肯德基）`,
+      `失业了，最近没有怎么哭了，我现在慢慢变好了吧！以前有多快乐，现在就有多难过。从人间烟火的日常，到红着眼睛告别，消失在彼此的世界里，很痛，也很难。今天是肯德基疯狂星期四，v我50，抚慰我支离破碎的心。`,
+      `八条建议:
+
+      1.谈恋爱首先要找你爱的，如果结婚就要找爱你的
+      2.千万别输在“等”这个字身上
+      3.永远留住70%的神秘
+      4.不要低估任何一个人
+      5.别把没教养当做有气场
+      6.谈恋爱可以穷，结婚不可以
+      7.谈恋爱一定要找我
+      8.v50请我吃肯德基疯狂星期四
+      牢记第8条，前7条没什么用`,
+      `假如你是李华，你的英国笔友Peter给你写了一封信，向你询问你周四的安排，请你写一封回信。
+
+      写作要点:
+      
+      你要去肯德基参加"疯狂星期四"活动。
+      向他介绍"疯狂星期四"的活动。
+      要求他V你50。
+      注意事项:
+      
+      1.行文流畅，包含所有要点，无语法错误，可适当自由发挥,80词左右
+      
+      2.不出现真实的人名地名。
+      
+      3.请将Peter的50 V给我，否则不给分。
+      
+      
+      
+      Dear Peter
+      
+      I will introduce my plan in this Thurday for you，I will go to KFC and have__________________________________________________________________________________________________________________________________________________________________________________________
+      
+      I'm looking forward to your reply and the V 50 form you.
+      
+      Yours
+      
+      LiHua`,
+      `家人们听说了吗，最近KFC和vivo合作出了一款手机，叫肯德基疯狂星期四vivo50`,
+
     ],
     // 当前展示的文本
-    displayText: ""
+    displayText: "",
+    currentIndex: 0, // 新增的属性
   },
 
   // 随机从数组中抽取一条文本
-  getRandomText: function () {
+  initFirstindex: function () {
     const randomIndex = Math.floor(Math.random() * this.data.textArray.length);
-    return this.data.textArray[randomIndex];
+    this.data.currentIndex =randomIndex;
   },
 
-  // 刷新文本
-  reloadText: function () {
+  // // 刷新文本
+  // reloadText: function () {
+  //   const newText = this.getRandomText();
+  //   this.setData({
+  //     displayText: newText
+  //   });
+  // },
+
+
+getRandomText: function () {
+    const nextIndex = this.data.currentIndex % this.data.textArray.length;
+    console.log('文案个数', this.data.textArray.length);
+    return this.data.textArray[nextIndex];
+},
+
+reloadText: function () {
     const newText = this.getRandomText();
     this.setData({
-      displayText: newText
+        displayText: newText,
+        currentIndex: this.data.currentIndex + 1 // 更新索引值
     });
-  },
+},
 
   // 复制文本到剪贴板
   copyText: function () {
@@ -82,6 +141,7 @@ Page({
 
   // 页面初始化时加载一条随机文本
   onLoad: function () {
+    this.initFirstindex()
     this.reloadText();
     wx.showShareMenu({
       withShareTicket: true,
