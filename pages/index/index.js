@@ -83,10 +83,14 @@ Page({
   // 页面初始化时加载一条随机文本
   onLoad: function () {
     this.reloadText();
+    wx.showShareMenu({
+      withShareTicket: true,
+      menus: ['shareAppMessage', 'shareTimeline']
+    });
   },
   onShareAppMessage: function (res) {
     return {
-      title: '分享的标题', // 分享标题
+      title: '彻底疯狂', 
       path: '/pages/index/index', // 分享路径
       imageUrl: '/images/share.png', // 分享图片路径（可选）
       success: function(res) {
