@@ -1,6 +1,9 @@
 <!--index.wxml-->
 <body>
- 
+<button class="circle-button"
+  size ="mini"
+  open-type="share"
+  bindtap="onShareAppMessage">+</button>
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container">
     <!-- <view class="text-container">
@@ -15,5 +18,6 @@
       <button class="btn btn-copy" bindtap="copyText">偷走</button>
     </div>
   </view>
+  
 </scroll-view>
 </body>

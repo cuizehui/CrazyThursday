@@ -3,6 +3,7 @@
 .container {
   padding: 20rpx;
   text-align: center;
+  margin-top: 50px;
 }
 
 body {
@@ -10,14 +11,12 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  display: flex-direction;
   height: 100vh;
-  box-sizing: border-box;
 }
 
 /* 文本区域样式 */
 .text-container {
-  margin-top: 20rpx;
+  margin-top: 50px;
   padding: 20rpx;
   border: 1px solid #ccc;
   border-radius: 10rpx;
@@ -72,4 +71,17 @@ body {
   font-size: 16px;
   border-radius: 50rpx;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.circle-button{
+ 
+  background-color: #FFA500; /* 背景颜色 */
+  color: white; /* 字体颜色 */
+  border-radius: 0%; /* 将形状变为正圆 */
+  border: none; /* 无边框 */
+  cursor: pointer; /* 鼠标样式 */
+  position: fixed; /* 固定位置 */
+  top: 10px; /* 离顶部 10px */
+  right: 30px; /* 离右侧 10px */
+  z-index: 1000; /* 确保按钮在最上层 */
 }
