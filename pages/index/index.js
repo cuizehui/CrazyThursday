@@ -72,9 +72,24 @@ Page({
       Yours
       
       LiHua`,
-      `家人们听说了吗，最近KFC和vivo合作出了一款手机，叫肯德基疯狂星期四vivo50`,
-
+      `有没有人和我一样很讨厌疯狂星期四的文案，尤其是朋友一发就是发一堆，后面还有人跟着发哈哈哈哈，我不知道笑点在哪里，但是我又不好意思叫他们不要发，然后我就想到一个办法，v我50今天疯狂星期四，我边吃边告诉你这个办法是什么`,
+      `有一个国王叫肯，娶了一个歌姬为妾。国王的国家矿产资源发达，国王十分宠爱歌姬，将一部分矿产给了歌姬的家族开发，但歌姬十分贪婪，为了实现矿产垄断，歌姬把其他同行的矿井都给封了，当国王听说他贴身武士的矿井也遭到封闭，于是把歌姬抓起来审判，歌姬问定什么罪，国王说:死罪。后来民间传唱此事：“肯的姬封矿刑期死，为我武士`,
+      `Actually, I wanted to reply to your WeChat last night, but I was afraid of bothering you with such a long post. Maybe I'm not that busy now
+      From the contact with you during this period, I feel that you are slow to warm up, a bit closed off and protective of yourself. I have always believed that as long as time accumulates, it can be changed. I am not someone who gives up easily. The only thing that can make me give up is that he has always regarded me as a friend, while I have been doing useless work. I feel like you have been resisting me, indirectly rejecting me. Maybe it's because you have someone else in your heart? Or maybe you are not interested in developing a relationship now and want to focus on your studies and work. If the other party is not very interested in a relationship, no matter how hard I try, it will be useless. I comfort myself that you are still conflicted and have no interest in dealing with these things, so I can wait. However, the premise of waiting is mutual. I don't like to disturb others and cause trouble for them. I have been a little tired recently because I don't know if I am being stranded. If you don't like me or have no feelings for me, I respect you. After all, liking you is my business and has nothing to do with you. You don't have to feel embarrassed or refuse me. If you have any feelings for me, I will bravely continue. If not, I will tactfully walk away and slowly let go. I know you also have a lot to say, but now I'm hungry. Can you give me 50 yuan to order takeout first? I heard that 50 yuan from KFC on Thursday can make me full.`,
+    `我00年，是个男大学生，身高178，相貌普通，在网上认识了一个少妇，他骗我说她28岁，因为之前学业事业都比较忙且工作环境异性少，所以没时间谈恋爱一直单身，她给我的感觉就是温柔体贴，而且身高168+，长相算是御姐。我本人其实一直喜欢御姐一点的女生，大概认识了一个月就在她的甜言蜜语中沦陷了，虽然是网恋，但是她会每天抽出所有空闲时间陪我聊天打电话，声音也挺好听，大概这段美好网恋关系持续了三个月。但是我前段时间无意中跟她打电话时听到了一个男人和小孩玩闹的声音，我就立马逼问她，她一开始支支吾吾的把我电话挂了，过了一会儿才又打电话过来给我解释说我听错了是电视剧声音，我也不傻，她很明显的骗我，在我的逼问下她告诉了我实情，她说她是因为年纪到了被迫被父母安排的结婚，按部就班的结婚生子，现在有一个孩子三岁，而且她也不是28，他已经32了，然后她就说我是他的真爱，如果我愿意可以当什么都没都没发生过，我们继续这样，一开始我是特别生气要和他断了联系，但是还是没忍住接了她的电话，她也一直这样哄我，也就一直这样不清不楚的联系着。直到最近她说她不想网恋了，她要来我家找我，我特别害怕，这样不清不楚的在网上还好，真到了现实中该怎么办，但是她一直逼问我是在哪个家，我也其实有点期待和他见面，就还是和她说了我在肯德基等你V我50`,
+    `招美国陪读
+    本人2025-2027打算去美国留学，但家人朋友都在国内，所以想找个人陪我在美国留学。飞机机票、吃住全部报销。
+    
+    一个月大概能有20W可商议。但是要能配合我的时间，需要会煮饭和打扫卫生得和我一起住，家里会安排house。主要内容是陪我玩，出去旅游，监督我学习等等。你也可以有自己的爱好，我会陪你一起玩。
+    
+    需要一些条件：
+    1.能流利的普通话沟通最好是中国出生，母语中文，英语流利更好。
+    2.因为我喜欢拍照，对方必须会构图。
+    3.我是i人，嗯，对方是i人e人都行，要帮我按电话。
+    4.如有符合条件的人推荐，我可以再承担你在美国的所有生活娱乐、购物的消费。
+    5.最后报名费50因为今天疯狂星期四`
     ],
+    
     // 当前展示的文本
     displayText: "",
     currentIndex: 0, // 新增的属性
