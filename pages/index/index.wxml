@@ -18,6 +18,6 @@
       <button class="btn btn-copy" bindtap="copyText">偷走</button>
     </div>
   </view>
-  
+
 </scroll-view>
 </body>

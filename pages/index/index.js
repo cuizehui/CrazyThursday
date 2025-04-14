@@ -117,6 +117,7 @@ Page({
     // 当前展示的文本
     displayText: "",
     currentIndex: 0, // 新增的属性
+    
   },
 
   // 随机从数组中抽取一条文本
@@ -146,6 +147,10 @@ reloadText: function () {
         displayText: newText,
         currentIndex: this.data.currentIndex + 1 // 更新索引值
     });
+    if(this.data.currentIndex % 5 === 0 )
+    this.interstitialAd.show().catch((err) => {
+      console.error(err)
+    })
 },
 
   // 复制文本到剪贴板
@@ -177,7 +182,26 @@ reloadText: function () {
       });
     }
   },
-
+  // 专门的广告初始化方法
+  initInterstitialAd() {
+    // 将广告实例挂载到page对象上 (this.interstitialAd)
+    this.interstitialAd = null;
+    if (wx.createInterstitialAd) {
+      this.interstitialAd = wx.createInterstitialAd({ 
+        adUnitId: 'adunit-40570ae67d033089' 
+      });
+      this.interstitialAd.onLoad(() => {
+        console.log('插屏广告加载成功');
+      });
+      this.interstitialAd.onError((err) => {
+        console.error('插屏广告错误:', err);
+      });
+      this.interstitialAd.onClose((res) => {
+        console.log('广告关闭', res);
+        // 可以在这里添加关闭后的逻辑
+      });
+    }
+  },
   // 页面初始化时加载一条随机文本
   onLoad: function () {
     this.initFirstindex()
@@ -186,6 +210,7 @@ reloadText: function () {
       withShareTicket: true,
       menus: ['shareAppMessage', 'shareTimeline']
     });
+    this.initInterstitialAd(); // 改为调用初始化方法
   },
   onShareAppMessage: function (res) {
     return {
