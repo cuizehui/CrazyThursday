@@ -193,9 +193,40 @@ reloadText: function () {
     this.interstitialAd.show().catch((err) => {
       console.error(err)
     })
-    }
-,
+    },
+    //增加触摸事件
+    touchStart(e) {
+      this.setData({ startX: e.touches[0].clientX });
+    },
+    //触摸动画
+    onTouchMove(e) {
+      const moveX = e.touches[0].clientX;
+      let deltaX = moveX - this.data.startX;
+      
+      if (deltaX < 0) { // 左滑
+        const maxSlide = 150;
+        deltaX = Math.max(deltaX, -maxSlide); // 限制最大滑动距离
+        const opacity = 1 + deltaX / maxSlide; // deltaX 为负
+        this.setData({
+          translateX: deltaX,
+          opacity: opacity
+        });
+      }
+    },
 
+    touchEnd(e) {
+      const endX = e.changedTouches[0].clientX;
+      const deltaX = endX - this.data.startX;
+      if (deltaX > 50) {
+        this.copyText()
+      } else if (deltaX < -50) {
+        this.reloadText()
+      }
+        this.setData({
+          translateX: 0,
+          opacity: 1
+        });
+    },
   // 复制文本到剪贴板
   copyText: function () {
     const textToCopy = this.data.displayText;

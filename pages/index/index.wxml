@@ -10,7 +10,8 @@
       <text class="text-content">最新文案每周三更新</text>
     </view> -->
     <!-- 显示随机文本 -->
-    <view class="card">
+    <view class="card"  bindtouchstart="touchStart" bindtouchend="touchEnd" bindtouchmove="onTouchMove"
+          style="transform: translateX({{translateX}}px); opacity: {{opacity}};">
       <text class="text-content">{{displayText}}</text>
     </view>
     <div class="button-container">
